@@ -8,7 +8,7 @@ const Movies = ({name, price, stock}) =>{
 
 
     const Increament = () =>{
-        if ( counter < 5){
+        if ( counter < stock){
             setCounter(counter + 1)
         }else{
             alert ('Sorry item is out of stock')
@@ -18,6 +18,8 @@ const Movies = ({name, price, stock}) =>{
     const Decreament = () =>{
         if ( counter >= 1){
             setCounter( counter - 1)
+        }else{
+            alert('No items added to remove')
         }
     }
 
