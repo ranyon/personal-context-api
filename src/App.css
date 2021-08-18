@@ -25,3 +25,15 @@
   margin: 50px;
   display: inline-table;
 }
+
+button{
+  background-color: rgb(198, 243, 152);
+  padding: 10px ;
+  border-radius: 5px ;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button:hover{
+  background-color: rgb(255, 255, 253);
+}
