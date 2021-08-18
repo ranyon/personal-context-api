@@ -16,7 +16,7 @@ const Movies = ({name, price, stock}) =>{
     }
 
     const Decreament = () =>{
-        if ( counter <= 0){
+        if ( counter >= 1){
             setCounter( counter - 1)
         }
     }
