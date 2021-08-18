@@ -11,7 +11,7 @@ const Movies = ({name, price, stock}) =>{
         if ( counter < 5){
             setCounter(counter + 1)
         }else{
-            alert ('Sorry items is out of stock')
+            alert ('Sorry item is out of stock')
         }
     }
 
