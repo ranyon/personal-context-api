@@ -1,4 +1,5 @@
-import React,{useState} from 'react';
+import React, {useState} from 'react';
+
 
 
 
@@ -10,29 +11,29 @@ const Movies = ({name, price, stock}) =>{
         if ( counter < 5){
             setCounter(counter + 1)
         }else{
-            alert ('Sorry item is out of stock')
+            alert ('Sorry items is out of stock')
         }
     }
 
     const Decreament = () =>{
-
+        if ( counter <= 0){
+            setCounter( counter - 1)
+        }
     }
-
-
-
 
     return(
         <div className='tweets'>
-            <p>Movie Name: {name}</p>
-            <p>Movie Price: {price}</p>
-            <p>Amount in stock: {stock}</p>
+            <p>Movie name: {name}</p>
+            <p>Movie price: {price}</p>
+            <p>{stock} items in stock</p>
             <p>
                 <button onClick={Increament}>Add item</button>
-                <button>Remove item</button>
+                <button onClick={Decreament}>Remove item</button>
             </p>
-            <p>{counter} items added</p>
+            <p>Added {counter} items</p>
         </div>
     )
 }
+
 
 export default Movies;
