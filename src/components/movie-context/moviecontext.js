@@ -23,6 +23,34 @@ export const MovieContext = createContext();
             id: '1322'
         },
         {
+            name: 'Harry potter',
+            price: '10$',
+            stock:5,
+            img:Harry,
+            id: '1222'
+        },
+        {
+            name: 'Tennet',
+            price: '10$',
+            stock:7,
+            img:Tenet,
+            id: '1322'
+        },
+        {
+            name: 'Harry potter',
+            price: '10$',
+            stock:5,
+            img:Harry,
+            id: '1222'
+        },
+        {
+            name: 'Tennet',
+            price: '10$',
+            stock:7,
+            img:Tenet,
+            id: '1322'
+        },
+        {
             name: 'Dave',
             price: '10$',
             stock:6,
