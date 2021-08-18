@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 
 
 
-const Movies = ({name, price, stock}) =>{
+const Movies = ({name, price, stock, image}) =>{
     const [counter, setCounter] = useState(0)
 
 
@@ -25,6 +25,8 @@ const Movies = ({name, price, stock}) =>{
 
     return(
         <div className='tweets'>
+            <br />
+            <img src={image} alt=""  width='50px'/>
             <p>Movie name: {name}</p>
             <p>Movie price: {price}</p>
             <p>{stock} items in stock</p>

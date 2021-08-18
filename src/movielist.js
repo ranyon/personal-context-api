@@ -30,7 +30,7 @@ const Movielist = () =>{
         <div>
             {/* <h1>{value}</h1> */}
             {movies.map((movie) =>(
-                <Movies name={movie.name} price={movie.price} stock={movie.stock}/>
+                <Movies name={movie.name} price={movie.price} stock={movie.stock} image={movie.img}/>
             )
             )}
         </div>
